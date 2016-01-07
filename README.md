@@ -4,7 +4,7 @@ Prone(https://github.com/magnars/prone) interceptor for Pedestal(https://github.
 
 ## Usage
 
-Add `[prone-pedestal "0.1.0"]` to `:dependencies` in your `project.clj`, then:
+Add `[prone-pedestal "0.1.1"]` to `:dependencies` in your `project.clj`, then:
 
 Add it as a interceptor to pedestal service map:
 
