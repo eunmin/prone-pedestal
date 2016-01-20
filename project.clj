@@ -1,4 +1,4 @@
-(defproject prone-pedestal "0.1.2"
+(defproject prone-pedestal "0.1.3-SNAPSHOT"
   :description "Prone for Pedestal"
   :url "http://github.com/eunmin/prone-pedestal"
   :license {:name "Eclipse Public License"
