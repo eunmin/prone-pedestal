@@ -32,5 +32,7 @@
      :error
      (fn [{:keys [request] :as ctx} e]
        (when-not (and skip-prone? (skip-prone? request))
-         (assoc ctx :response
-           (prone/exceptions-response request e app-namespaces))))}))
+         (let [wrapped-e (-> e ex-data :exception)]
+           (assoc ctx :response
+                  (prone/exceptions-response
+                   request wrapped-e app-namespaces)))))}))
